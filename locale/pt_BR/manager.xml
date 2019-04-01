@@ -4,8 +4,8 @@
 <!--
   * locale/pt_BR/manager.xml
   *
-  * Copyright (c) 2013-2019 Simon Fraser University
-  * Copyright (c) 2003-2019 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Localization information: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Portuguese_(pt_BR)
   * Localization strings.
@@ -121,18 +121,18 @@
 	<message key="manager.setup.currentIssue">Edição Atual</message>
 	<message key="manager.setup.customizingTheLook">Passo 5. Visual da revista</message>
 	<message key="manager.setup.customTags">Tags META personalizadas</message>
-	<message key="manager.setup.customTagsDescription"><![CDATA[Tags META, inseridas no cabeçalho HTML das páginas do sistema.</message>
+	<message key="manager.setup.customTagsDescription"><![CDATA[Tags META, inseridas no cabeçalho HTML das páginas do sistem]]></message>
 	<message key="manager.setup.details">Detalhes</message>
-	<message key="manager.setup.details.description">Nome da revista, ISSN, contatos, editora e patrocinadores e sistemas de busca.</message>
-	<message key="manager.setup.disableUserRegistration">O Gerente da Revista é responsável por cadastrar todos os usuários, permitindo a editores e editores de seção cadastrar avaliadores.</message>
+	<message key="manager.setup.details.description">Nome do periódico, ISSN, contatos, editora, apoiadores, e mecanismos de busca.</message>
+	<message key="manager.setup.disableUserRegistration">O gerente do periódico será responsável cadastrar todas as contas de usuários. Editores e editores de seção podem cadastrar apenas avaliadores.</message>
 	<message key="manager.setup.discipline">Área e sub-área de conhecimento acadêmico</message>
 	<message key="manager.setup.disciplineDescription">Recomendado para revistas e/ou trabalhos multidisciplinares.</message>
 	<message key="manager.setup.disciplineExamples">(Ex.: História; Educação; Sociologia; Psicologia; Direito; Ciência da Informação)</message>
 	<message key="manager.setup.disciplineProvideExamples">Informe exemplos de áreas do conhecimento relevantes para esta revista</message>
-	<message key="manager.setup.displayCurrentIssue">Incluir sumário na edição atual (se disponível).</message>
+	<message key="manager.setup.displayCurrentIssue">Exibir o sumário da edição atual (se disponível).</message>
 	<message key="manager.setup.editorDecision">Decisão editorial</message>
-	<message key="manager.setup.emailBounceAddress">Endereço de retorno de e-mail</message>
-	<message key="manager.setup.emailBounceAddressDescription">Qualquer e-mail retornado (não recebido pelo destinatário) produzirá uma mensagem de erro encaminhada para o endereço definido aqui.</message>
+	<message key="manager.setup.emailBounceAddress">Endereço para receber mensagens de retorno (Bounce Address)</message>
+	<message key="manager.setup.emailBounceAddressDescription">Qualquer email não entregue resultará em uma mensagem de erro para esse endereço.</message>
 	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Aviso:</strong> Para ativar esta opção, o administrador do portal deve habilitar a opção <tt>allow_envelope_sender</tt> no documento de configuração do sistema. Configurações adicionais no servidor podem ser necessárias para suportar tal funcionalidade (pode não ser possível em todos os tipos de servidores!), como descrito na documentação do sistema.]]></message>
 	<message key="manager.setup.emails">Identificação de e-mail</message>
 	<message key="manager.setup.emailSignature">Assinatura</message>
@@ -584,4 +584,10 @@ Poderão ser usados estatísticas individuais de uso, por exemplo, para exibir u
 	<message key="plugins.importexport.common.error.unknownJournal">O caminho da revista expecificado, "{$journalPath}", não existe.</message>
 	<message key="plugins.importexport.common.error.unknownObjects">Os objetos especificados não puderam ser encontrados.</message>
 	<message key="manager.setup.notifications.copyPrimaryContact">Enviar uma cópia para o contato principal, identificado nas Configurações da Revista.</message>
+	<message key="subscriptionManager.subscription.confirmRemove">Você tem certeza que deseja excluir esta aasinatura?</message>
+	<message key="manager.paymentTypes">Tipos de pagamento</message>
+	<message key="manager.setup.plnPluginEnable">Plugin PKP PN habilitado</message>
+	<message key="manager.setup.plnDescription">A Rede de Preservação PKP (PN) fornece serviços gratuitos de preservação para qualquer periódico no OJS que atenda a alguns critérios básicos.</message>
+	<message key="manager.setup.plnSettingsDescription">Clique no link Configurações para aceitar os termos de uso da PKP PN.</message>
+	<message key="manager.setup.plnPluginArchiving">PKP Preservation Network (PN)</message>
 </locale>

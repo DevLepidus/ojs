@@ -4,8 +4,8 @@
 <!--
   * locale/pt_BR/emailTemplates.xml
   *
-  * Copyright (c) 2014-2019 Simon Fraser University
-  * Copyright (c) 2003-2019 John Willinsky
+  * Copyright (c) 2014-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Localization information: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Portuguese_(pt_BR)
   * Localized email templates XML file.
@@ -16,10 +16,7 @@
 		<subject>Solicitação de atualização de senha</subject>
 		<body><![CDATA[Recebemos uma solicitação para atualizar sua senha de acesso à revista {$siteTitle}.<br />
 <br />
-Caso não tenha feito a solicitação, ignore esta mensagem, para não alterar sua senha.<br />
-<br />
-Se deseja realmente atualizar sua senha, clique no link a seguir.<br />
-<br />
+Caso não tenha feito a solicitação, por favor ignore esta mensagem e sua senha não será alterada. Se deseja realmente atualizar sua senha, clique no link a seguir.<br /> 
 Atualizar senha: {$url}<br />
 <br />
 {$principalContactSignature}]]></body>
@@ -56,7 +53,7 @@ A revista {$contextName} acaba de publicar seu último número, disponível em {
 <br />
 Agradecemos pelo seu apoio contínuo e confiança em nosso trabalho,<br />
 {$editorialContactSignature}]]></body>
-		<description>Mensagem enviada para leitores cadastrados via "notificação de usuários"  na página do Editor. Ela convida os leitores a acessar o sistema web da revista para ler a edição mais recente, através da URL informada.</description>
+		<description>Mensagem enviada para leitores cadastrados via "notificação de usuários" na página do Editor. Ela convida os leitores a acessar o sistema web da revista para ler a edição mais recente, através da URL informada.</description>
 	</email_text>
 	<email_text key="SUBSCRIPTION_NOTIFY">
 		<subject>Confirmação de assinatura</subject>
@@ -82,7 +79,7 @@ Em caso de dúvidas, entre em contato via e-mail.<br />
 		<subject>Nova edição de Acesso Livre</subject>
 		<body><![CDATA[Caros leitores,<br />
 <br />
-A {$contextName} acaba de tornar disponível para Acesso Livre mais uma edição. Convidamos a examinar o sumário nesta mensagem e então acessar a revista ({$contextUrl}), para ler os artigos e outros itens de seu proveito.<br />
+A {$contextName} acaba de tornar disponível para Acesso Livre mais uma edição. Convidamos a examinar o sumário nesta mensagem e então acessar a revista ({$contextUrl}), para ler os artigos e outros itens de seu interesse.<br />
 <br />
 Agradecemos o interesse e apoio contínuo à revista,<br />
 {$editorialContactSignature}]]></body>
@@ -138,10 +135,10 @@ Em caso de dúvidas, entre em contato via e-mail.<br />
 		<description>Esta mensagem é o último aviso ao assinante da expiração da assinatura. Informa a URL da revista e instruções de acesso.</description>
 	</email_text>
 	<email_text key="LOCKSS_EXISTING_ARCHIVE">
-		<subject>Solicitação para incluir a revista {$contextName} em seu arquivo</subject>
-		<body><![CDATA[&lt;![CDATA[Prezada(o) [Nome da(o) Bibliotecária(o) da Universidade],<br />
+		<subject>Solicitação de inclusão da revista {$contextName} em seu arquivo</subject>
+		<body><![CDATA[Prezada(o) [Nome da(o) Bibliotecária(o) da Universidade],<br />
 <br />
-{$contextName} &lt;{$contextUrl}&gt; é uma revista na qual um docente da sua instituição, [nome da pessoa], possui o papel editorial de [título do papel editorial]. Esta revista deseja estabelecer arquivamento por meio do LOCKSS (Lots of Copies Keep Stuff Safe - Muitas Cópias Mantém as Coisas Seguras) com esta e outras bibliotecas de instituições de ensino superior.<br />
+{$contextName} &amp;lt;{$contextUrl}&amp;gt;, é uma revista na qual um docente da sua instituição, [nome da pessoa], possui o papel editorial de [título do papel editorial]. Esta revista deseja estabelecer arquivamento por meio do LOCKSS (Lots of Copies Keep Stuff Safe - Muitas Cópias Mantém as Coisas Seguras) com esta e outras bibliotecas de instituições de ensino superior.<br />
 <br />
 [Breve descrição da revista]<br />
 <br />
@@ -152,12 +149,12 @@ Consta do nosso registro que esta biblioteca é participante do sistema LOCKSS. 
 Em caso de dúvidas, entre em contato via e-mail.<br />
 <br />
 Agradecendo desde já a atenção dispensada,<br />
-{$principalContactSignature}]]&gt;]]></body>
+{$principalContactSignature}]]></body>
 		<description>Mensagem solicita ao administrador de um repositório LOCKSS que considere armazenar a revista em seu arquivo, informando a URL para o Manifesto LOCKSS da Editora da revista.</description>
 	</email_text>
 	<email_text key="LOCKSS_NEW_ARCHIVE">
 		<subject>Solicitação de inclusão da revista {$contextName} em seu arquivo</subject>
-		<body><![CDATA[&lt;![CDATA[Prezada(o) [Nome da(o) Bibliotecária(o) da Universidade],<br />
+		<body><![CDATA[Prezada(o) [Nome da(o) Bibliotecária(o) da Universidade],<br />
 <br />
 {$contextName} &lt;{$contextUrl}&gt; é uma revista na qual um docente da sua instituição, [nome da pessoa], possui o papel editorial de [título do papel editorial]. Esta revista deseja estabelecer arquivamento por meio do LOCKSS (Lots of Copies Keep Stuff Safe - Muitas Cópias Mantém as Coisas Seguras) com esta e outras bibliotecas de instituições de ensino superior.<br />
 <br />
@@ -171,7 +168,7 @@ Aguardamos resposta sobre sua disponibilidade para arquivamento desta revista.<b
 <br />
 Agradecendo desde já a atenção dispensada,<br />
 {$principalContactSignature}]]&gt;]]></body>
-		<description>Mensagem convida o destinatário a participar da iniciativa LOCKSS e incluir a revista no seu repositório, oferecendo informações iniciais e sobre como participar. O remetente deverá preencher as informações, substituindo o que estiver em colchetes!</description>
+		<description>Mensagem de convite ao destinatário para participar da iniciativa LOCKSS e incluir a revista no seu repositório, oferecendo informações iniciais e sobre como participar. O remetente deverá preencher as informações, substituindo o que estiver em colchetes!</description>
 	</email_text>
 	<email_text key="SUBMISSION_ACK">
 		<subject>Agradecimento pela submissão</subject>
@@ -225,7 +222,7 @@ Agradecemos sua contribuição, fundamental para garantir a qualidade deste proc
 		<subject>Tarefa editorial</subject>
 		<body><![CDATA[{$editorialContactName},<br />
 <br />
-Como parte de suas funções como editor de seção, designamos para seu acompanhamento do processo editorial a submissão &quot;{$submissionTitle}&quot; para a revista {$contextName}.<br />
+Como parte de suas funções como editor de seção, designamos para seu acompanhamento o processo editorial da submissão &quot;{$submissionTitle}&quot; para a revista {$contextName}.<br />
 <br />
 URL da submissão: {$submissionUrl}<br />
 login: {$editorUsername}<br />
@@ -689,8 +686,7 @@ Link: {$url}<br />
 		<subject>Decisão editorial</subject>
 		<body><![CDATA[{$authorName},<br />
 <br />
-Foi tomada uma decisão sobre o artigo submetido à revista {$contextName},<br />
-&quot;{$submissionTitle}&quot;.<br />
+Foi tomada uma decisão sobre o artigo submetido à revista {$contextName},<br /> &quot;{$submissionTitle}&quot;.<br />
 <br />
 A decisão é: Submissão aceita.<br />
 <br />
@@ -827,15 +823,15 @@ URL: {$subscriptionUrl}]]></body>
 		<subject>Edição de citação</subject>
 		<body><![CDATA[{$authorFirstName},<br />
 <br />
-Solicitamos verificar ou encaminhar a citação correta para a seguinte referência do seu artigo, {$submissionTitle}:<br />
+Solicitamos, por favor, verificar ou encaminhar a citação correta para a seguinte referência do seu artigo, {$submissionTitle}:<br />
 <br />
 {$rawCitation}<br />
 <br />
 Atenciosamente,<br />
 <br />
 {$userFirstName}<br />
-Editor de texto, {$contextName}]]></body>
-		<description>Solicitação ao autor de detalhes sobre referência, enviada pelo editor de texto.</description>
+Editor de texto, {$contextName}<br />]]></body>
+		<description>Solicitação enviada pelo editor de texto ao autor sobre detalhes de referências.</description>
 	</email_text>
 	<email_text key="REVIEW_REQUEST_SUBSEQUENT">
 		<subject>Solicitação de avaliação de artigo</subject>
@@ -926,13 +922,49 @@ URL da submissão: {$submissionUrl}<br />
 		<subject>Decisão do Editor</subject>
 		<body><![CDATA[{$authorName}:<br />
 <br />
-Chegamos a uma decisão sobre sua submissão  {$contextName}, &quot;{$submissionTitle}&quot;.<br />
+Chegamos a uma decisão sobre sua submissão à revista {$contextName}, &quot;{$submissionTitle}&quot;.<br />
 <br />
-Nossa decisão é que seu artigo foi enviado para avaliação externa. Iremos aguardar os pareceres para entrar em contato novamente<br />
+Seu artigo foi enviado para avaliação externa. Iremos aguardar os pareceres para entrar em contato novamente.<br />
 <br />
 URL da submissão: {$submissionUrl}<br />
 <br />
 {$editorialContactSignature}<br />]]></body>
 		<description>Este e-mail enviado pelo Editor ou Editor de Seção para um autor serve para notificar o mesmo de que sua submissão foi enviada para revisores externos.</description>
+	</email_text>
+	<email_text key="EDITOR_DECISION_INITIAL_DECLINE">
+		<subject>Decisão editorial</subject>
+		<body><![CDATA[{$authorName}:<br />
+<br />
+Foi tomada uma decisão editorial anterior à avaliação por pares do artigo enviado à revista {$contextName}, &quot;{$submissionTitle}&quot;.<br />
+<br />
+A decisão é: Submissão rejeitada <br />
+<br />
+{$editorialContactSignature}<br />]]></body>
+		<description>Esse e-mail é enviado ao autor se o editor rejeitar sua submissão inicialmente, antes do estágio de avaliação</description>
+	</email_text>
+	<email_text key="EDITOR_DECISION_SEND_TO_PRODUCTION">
+		<subject>Envio de artigo para editoração</subject>
+		<body><![CDATA[{$authorName}:<br />
+<br />
+A edição de seu artigo, &quot;{$submissionTitle},&quot; está completa. Estamos enviando-o agora para editoração.<br />
+<br />
+URL da submissão: {$submissionUrl}<br />
+<br />
+{$editorialContactSignature}<br />]]></body>
+		<description>E-mail do Editor/Editor de Seção ao autor notificando-o que sua submissão está sendo enviada para editoração</description>
+	</email_text>
+	<email_text key="EDITOR_RECOMMENDATION">
+		<subject>Recomendação Editorial</subject>
+		<body><![CDATA[{$editors}:<br />
+<br />
+A recomendação quanto à submissão &quot;{$submissionTitle}&quot à revista {$contextName} é {$recommendation}<br />
+<br />
+{$editorialContactSignature}<br />]]></body>
+		<description>Esta mensagem é uma notificação de que o editor ou editor de seção com a restrição "apenas recomendar" fez sua recomendação final e uma decisão editorial pode ser tomada.</description>
+	</email_text>
+	<email_text key="NOTIFICATION_CENTER_DEFAULT">
+		<subject>Mensagem de {$contextName}</subject>
+		<body>Escreva aqui sua mensagem.</body>
+		<description>Mensagem padrão (em branco) usada no construtor de listas do Centro de Notificações</description>
 	</email_text>
 </email_texts>

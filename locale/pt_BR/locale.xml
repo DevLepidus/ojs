@@ -4,8 +4,8 @@
 <!--
   * locale/pt_BR/locale.xml
   *
-  * Copyright (c) 2013-2019 Simon Fraser University
-  * Copyright (c) 2003-2019 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Localization information: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Portuguese_(pt_BR)
   * Localization strings.
@@ -584,7 +584,6 @@ Escolha um modelo para administrar os aspectos do processo editorial. (Para desi
 	<message key="about.focusAndScope">Foco e Escopo</message>
 	<message key="about.sectionPolicies">Políticas de Seção</message>
 	<message key="about.submissions">Submissões</message>
-	<message key="about.onlineSubmissions">Submissões Online</message>
 	<message key="about.onlineSubmissions.login">Acesso</message>
 	<message key="about.onlineSubmissions.registrationRequired">O cadastro no sistema e posterior acesso, por meio de login e senha, são obrigatórios para a submissão de trabalhos, bem como para acompanhar o processo editorial em curso. {$login} em uma conta existente ou {$register} uma nova conta.</message>
 	<message key="about.authorGuidelines">Diretrizes para Autores</message>
@@ -614,7 +613,6 @@ Escolha um modelo para administrar os aspectos do processo editorial. (Para desi
 	<message key="help.ojsHelpAbbrev">Ajuda do sistema</message>
 
 	<!-- Installer -->
-	<message key="installer.ojsInstallation">Instalação do sistema</message>
 	<message key="installer.ojsUpgrade">Atualização do sistema</message>
 	<message key="installer.installationInstructions"><![CDATA[<h4> Versão do OJS {$version}</h4>
 
@@ -844,8 +842,6 @@ Autores que publicam nesta revista concordam com os seguintes termos:
 	<message key="user.noRoles.regReviewer">Cadastrar como avaliador</message>
 	<message key="user.noRoles.regReviewerClosed">Cadastrar como avaliador: o cadastro de avaliadores está atualmente desabilitado.</message>
 	<message key="issue.coverPage.altText">Capa da revista</message>
-	<message key="plugins.categories.implicitAuth">Plugins de Autenticação Implícita</message>
-	<message key="plugins.categories.implicitAuth.description">Plugins de Autenticação Implícita implementam suporte para autenticação de usuários baseada nos cabeçalhos HTTP.</message>
 	<message key="submission.layout.publicGalleyId">Identificador Público de Composição</message>
 	<message key="submission.layout.galleyPublicIdentificationExists">Identificador público de composição já existe.</message>
 	<message key="about.aboutThisPublishingSystem.altText">Processo editorial e de publicação</message>
@@ -939,6 +935,7 @@ Pode-se opcionalmente informar o motivo pelo qual está sendo desativado o cadas
 	<message key="payment.subscription.purchase">Adquirir Assinatura</message>
 	<message key="installer.installApplication">Instalar o sistema</message>
 	<message key="installer.upgradeApplication">Atualizar o sistema</message>
+	<message key="notification.type.articleSubmitted">Um novo artigo, "{$title}", foi submetido.</message>
 	<message key="notification.type.editing">Editando eventos</message>
 	<message key="notification.type.editorDecisionComment">Um comentário foi feito sobre a decisão editorial de "{$title}".</message>
 	<message key="notification.type.galleyModified">A versão para publicação foi alterada para "{$title}".</message>
@@ -1073,4 +1070,16 @@ Pode-se opcionalmente informar o motivo pelo qual está sendo desativado o cadas
 	<message key="editor.issues.backIssues">Edições anteriores</message>
 	<message key="editor.issues.futureIssues">Edições futuras</message>
 
+	<message key="user.reviewerPrompt.optin">Sim, eu gostaria de ser contatado com solicitações para avaliar submissões para este periódico.</message>
+	<message key="subscriptions.status.noSubscription">Você não tem uma assinatura ativa.</message>
+	<message key="reader.purchasePrice">({$currency} {$price})</message>
+	<message key="user.register.form.emailConsentAllContexts">Sim, gostaria de ser notificado sobre novas publicações e anúncios para todos os periódicos com os quais me registrei.</message>
+	<message key="payment.type.publication.required">A taxa de publicação precisa ser paga.</message>
+	<message key="payment.requestPublicationFee">Taxa de publicação requerida: ({$feeAmount})</message>
+	<message key="payment.notFound">Um pagamento foi solicitado, mas a solicitação expirou. Entre em contato com o gerente da revista para obter detalhes.</message>
+	<message key="log.editor.recommendation">Uma recomendação editorial ({$decision}) para o artigo {$submissionId} foi  registrada por {$editorName}.</message>
+	<message key="notification.type.public">Anúncios públicos</message>
+	<message key="notification.type.publicationScheduled">Esta submissão foi agendada para publicação.</message>
+	<message key="navigation.subscriptions">Assinaturas</message>
+	<message key="log.editor.submissionExpedited">{$editorName} iniciou o processo de edição para o artigo {$submissionId}.</message>
 </locale>
